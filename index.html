@@ -7,27 +7,62 @@
 </head>
 <body class="font-sans">
 
-  <header class="shadow-sm bg-white">
+<header class="shadow-sm bg-white">
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
-    <div >
-    <img src="./image/image 3.png" alt="">
+    <!-- Logo -->
+    <div class="flex-shrink-0">
+      <img src="./image/image 3.png" alt="Logo" class="h-10">
     </div>
 
-    <nav class="hidden lg:flex gap-5 text-gray-700 font-medium">
-      <a href="#">Giới thiệu</a>
-      <a href="#">Đối tượng khách hàng</a>
-      <a href="#">Quy trình</a>
-      <a href="#">Bảng giá</a>
-      <a href="#">Cảm nhận khách hàng</a>
-      <a href="#">Đội ngũ bác sĩ</a>
-      <a href="#">Hình ảnh & Video</a>
+    <!-- Menu desktop -->
+    <nav class="hidden lg:flex items-center">
+      <a href="#" class="relative px-3 py-1 text-[13px] text-gray-700 hover:text-blue-500 after:block after:h-0.5 after:bg-blue-500 after:absolute after:left-0 after:-bottom-1 after:w-full after:scale-x-0 after:origin-center hover:after:scale-x-100 after:transition-transform after:duration-300">Giới thiệu</a>
+      <a href="#" class="relative px-3 py-1 text-[13px] text-gray-700 hover:text-blue-500 after:block after:h-0.5 after:bg-blue-500 after:absolute after:left-0 after:-bottom-1 after:w-full after:scale-x-0 after:origin-center hover:after:scale-x-100 after:transition-transform after:duration-300">Đối tượng khách hàng</a>
+      <a href="#" class="relative px-3 py-1 text-[13px] text-gray-700 hover:text-blue-500 after:block after:h-0.5 after:bg-blue-500 after:absolute after:left-0 after:-bottom-1 after:w-full after:scale-x-0 after:origin-center hover:after:scale-x-100 after:transition-transform after:duration-300">Quy trình</a>
+      <a href="#" class="relative px-3 py-1 text-[13px] text-gray-700 hover:text-blue-500 after:block after:h-0.5 after:bg-blue-500 after:absolute after:left-0 after:-bottom-1 after:w-full after:scale-x-0 after:origin-center hover:after:scale-x-100 after:transition-transform after:duration-300">Bảng giá</a>
+      <a href="#" class="relative px-3 py-1 text-[13px] text-gray-700 hover:text-blue-500 after:block after:h-0.5 after:bg-blue-500 after:absolute after:left-0 after:-bottom-1 after:w-full after:scale-x-0 after:origin-center hover:after:scale-x-100 after:transition-transform after:duration-300">Cảm nhận khách hàng</a>
+      <a href="#" class="relative px-3 py-1 text-[13px] text-gray-700 hover:text-blue-500 after:block after:h-0.5 after:bg-blue-500 after:absolute after:left-0 after:-bottom-1 after:w-full after:scale-x-0 after:origin-center hover:after:scale-x-100 after:transition-transform after:duration-300">Đội ngũ bác sĩ</a>
+      <a href="#" class="relative px-3 py-1 text-[13px] text-gray-700 hover:text-blue-500 after:block after:h-0.5 after:bg-blue-500 after:absolute after:left-0 after:-bottom-1 after:w-full after:scale-x-0 after:origin-center hover:after:scale-x-100 after:transition-transform after:duration-300">Hình ảnh & Video</a>
     </nav>
-    <button class="bg-orange-400 text-white px-4 py-2 rounded-full font-medium shadow">
-      Gọi 19001806  
-    </button>
-  </header>
 
+    <!-- Button số điện thoại -->
+    <button class="hidden lg:flex bg-orange-400 text-white px-4 py-2 rounded-full font-medium shadow items-center gap-2 hover:bg-orange-500 hover:scale-105 transition-all duration-300">
+      <img src="./image/hinhdienthoai.png" alt="phone icon" class="w-5 h-5">
+      <a href="#">Gọi 19001806</a>
+    </button>
+
+    <!-- Hamburger mobile -->
+    <button id="menuBtn" class="lg:hidden text-gray-700 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="hidden lg:hidden border-t border-gray-100 bg-white px-6 py-4 flex flex-col gap-3">
+    <a href="#" class="text-[13px] text-gray-700 hover:text-blue-500 py-1 border-b border-gray-100">Giới thiệu</a>
+    <a href="#" class="text-[13px] text-gray-700 hover:text-blue-500 py-1 border-b border-gray-100">Đối tượng khách hàng</a>
+    <a href="#" class="text-[13px] text-gray-700 hover:text-blue-500 py-1 border-b border-gray-100">Quy trình</a>
+    <a href="#" class="text-[13px] text-gray-700 hover:text-blue-500 py-1 border-b border-gray-100">Bảng giá</a>
+    <a href="#" class="text-[13px] text-gray-700 hover:text-blue-500 py-1 border-b border-gray-100">Cảm nhận khách hàng</a>
+    <a href="#" class="text-[13px] text-gray-700 hover:text-blue-500 py-1 border-b border-gray-100">Đội ngũ bác sĩ</a>
+    <a href="#" class="text-[13px] text-gray-700 hover:text-blue-500 py-1">Hình ảnh & Video</a>
+    <button class="mt-2 bg-orange-400 text-white px-4 py-2 rounded-full font-medium shadow flex items-center justify-center gap-2 hover:bg-orange-500 transition-all duration-300">
+      <img src="./image/hinhdienthoai.png" alt="phone icon" class="w-5 h-5">
+      Gọi 19001806
+    </button>
+  </div>
+
+</header>
+
+<script>
+  document.getElementById('menuBtn').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  });
+</script>
   <section class="grid md:grid-cols-2 gap-10 px-10 py-16 items-center">
     <div>
       <h1 class="text-4xl font-bold leading-tight text-gray-800">
@@ -41,15 +76,16 @@
      Vắc-xin ra đời được coi là một trong những thành tựu vĩ đại của nhân loại. Nhờ có Vắc xin, hàng triệu người trên thế giới tránh được nguy cơ tử vong và những di chứng, dị tật suốt đời do các bệnh truyền nhiễm như sởi, quai bị, rubella, thủy đậu, uốn ván...
     </p>
 
-    <div class="flex gap-4 mt-8">
-      <button class="bg-orange-400 text-white px-6 py-3 rounded-full shadow">
-        📝 ĐĂNG KÝ TƯ VẤN
-      </button>
+    <div class="flex items-center gap-4 mt-7">
+  <button class="flex items-center justify-center gap-2 bg-orange-400 hover:bg-orange-500 hover:shadow-lg transition-all duration-300 text-white font-medium px-6 py-3 rounded-full shadow-md transform hover:-translate-y-1">
+    <img src="./image/note.png" alt="icon" class="w-5 h-5 object-contain">
+    <span>ĐĂNG KÝ TƯ VẤN</span>
+  </button>
 
-      <button class="border border-orange-400 text-orange-400 px-6 py-3 rounded-full">
-        QUY TRÌNH TIÊM CHỦNG
-      </button>
-    </div>
+  <button class="flex items-center justify-center border-2 border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-white hover:shadow-lg transition-all duration-300 font-medium px-6 py-3 rounded-full transform hover:-translate-y-1">
+    QUY TRÌNH TIÊM CHỦNG
+  </button>
+</div>
   </div>
 
   <div class="relative">
@@ -106,15 +142,16 @@
         Hiệu quả phòng bệnh tối ưu <br>
         từ việc thực hiện Tiêm chủng Vắc-xin
       </h2>
-
+  <div class="mt-2 w-[140px] h-1 bg-blue-500 mb-6"></div>
       <p class="text-gray-500 mt-6 text-justify">
       Bệnh viện Đa khoa Phương Đông cung cấp dịch vụ tư vấn và tiêm chủng vắc-xin dành cho cả trẻ em và người lớn với nhiều gói tiêm đa dạng, chi phí hợp lý, mang lại hiệu quả phòng bệnh tối ưu. Tiêm chủng tạo cho con người nền tảng phát triển khỏe mạnh, không dị tật, di chứng... góp phần thúc đẩy nguồn nhân lực cho các quốc gia. Từ đó giảm chi phí chăm sóc y tế, tăng năng suất lao động, góp phần quan trọng trong xóa đói giảm nghèo và thúc đẩy phát triển kinh tế, xã hội.
 Tiêm chủng vắc-xin là biện pháp phòng bệnh an toàn, hiệu quả, được áp dụng cho cả người lớn và trẻ em, đặc biệt là người già, người có bệnh nền mạn tính (tim mạch, tiểu đường, huyết áp...), người bị suy giảm miễn dịch… Để được tiêm phòng đầy đủ các loại vắc xin cần thiết, các gia đình nên lựa chọn những cơ sở y tế chuyên biệt về tiêm chủng, có đầy đủ cơ sở vật chất, trang thiết bị y tế để được tư vấn và tiêm vắc xin chất lượng, an toàn.
       </p>
 
-      <button class="mt-7 bg-orange-400 text-white px-6 py-3 rounded-full shadow">
-        <img src="./image/note.png" alt=""> ĐĂNG KÝ TƯ VẤN
-      </button>
+  <button class="mt-7 flex items-center justify-center gap-2 bg-orange-400 hover:bg-orange-500 hover:shadow-lg transition-all duration-300 text-white font-medium px-6 py-3 rounded-full shadow-md transform hover:-translate-y-1">
+  <img src="./image/note.png" alt="icon" class="w-5 h-5 object-contain">
+  <span>ĐĂNG KÝ TƯ VẤN</span>
+</button>
     </div>
 
   </div>
@@ -200,87 +237,61 @@ Lưu giữ lịch sử tiêm online, nhắc lịch và thông báo cập nhật 
     <!-- LEFT -->
     <div>
       <h2 class="text-2xl font-bold mb-6">Quyền lợi của khách hàng</h2>
+        <div class="mt-2 w-[140px] h-1 bg-blue-500 mb-6"></div>
+      <ul class="space-y-6">
 
-   <ul class="space-y-6">
+        <li class="flex gap-3 group">
+          <img src="./image/Group.svg" class="w-5 h-5 mt-1 shrink-0" alt="">
+          <div>
+            <p class="text-black font-medium group-hover:text-blue-500 transition-colors duration-300">Được khám bệnh, chữa bệnh và chăm sóc kịp thời, tận tình chu đáo</p>
+            <p class="text-gray-500 text-sm mt-1 group-hover:text-gray-700 transition-colors duration-300">Được khám chữa bệnh bằng phương pháp an toàn, hiệu quả; phù hợp với tình trạng bệnh tật và nhu cầu của người bệnh.</p>
+          </div>
+        </li>
 
-  <!-- Item -->
-  <li class="flex gap-3">
-    <!-- Icon -->
-    <img src="./image/Group.svg" class="w-5 h-5 mt-1" alt="">
+        <li class="flex gap-3 group">
+          <img src="./image/Group.svg" class="w-5 h-5 mt-1 shrink-0" alt="">
+          <div>
+            <p class="text-black font-medium group-hover:text-blue-500 transition-colors duration-300">Được tôn trọng các giá trị và niềm tin cá nhân</p>
+            <p class="text-gray-500 text-sm mt-1 group-hover:text-gray-700 transition-colors duration-300">Được tôn trọng quyền riêng tư, các nhu cầu tình cảm, xã hội, văn hóa, tín ngưỡng. Được bảo mật các thông tin cá nhân và thông tin y tế.</p>
+          </div>
+        </li>
 
-    <!-- Content -->
-    <div>
-      <p class="text-black font-medium">
-        Được khám bệnh, chữa bệnh và chăm sóc kịp thời, tận tình chu đáo
-      </p>
-      <p class="text-gray-500 text-sm mt-1">
-      Được khám chữa bệnh bằng phương pháp an toàn, hiệu quả; phù hợp với tình trạng bệnh tật và nhu cầu của người bệnh.
-      </p>
-    </div>
-  </li>
+        <li class="flex gap-3 group">
+          <img src="./image/Group.svg" class="w-5 h-5 mt-1 shrink-0" alt="">
+          <div>
+            <p class="text-black font-medium group-hover:text-blue-500 transition-colors duration-300">Được bảo vệ an toàn</p>
+            <p class="text-gray-500 text-sm mt-1 group-hover:text-gray-700 transition-colors duration-300">Được cung cấp dịch vụ y tế đảm bảo về chất lượng dịch vụ và an toàn người bệnh. Được bảo vệ khỏi những rủi ro, được hỗ trợ bảo quản tài sản.</p>
+          </div>
+        </li>
 
-  <!-- Item -->
-  <li class="flex gap-3">
-    <img src="./image/Group.svg" class="w-5 h-5 mt-1" alt="">
-    <div>
-      <p class="text-black font-medium">
-        Được tôn trọng các giá trị và niềm tin cá nhân
-      </p>
-      <p class="text-gray-500 text-sm mt-1">
-       Được tôn trọng quyền riêng tư, các nhu cầu tình cảm, xã hội, văn hóa, tín ngưỡng. Được bảo mật các thông tin cá nhân và thông tin y tế.
-      </p>
-    </div>
-  </li>
+        <li class="flex gap-3 group">
+          <img src="./image/Group.svg" class="w-5 h-5 mt-1 shrink-0" alt="">
+          <div>
+            <p class="text-black font-medium group-hover:text-blue-500 transition-colors duration-300">Được cung cấp thông tin</p>
+            <p class="text-gray-500 text-sm mt-1 group-hover:text-gray-700 transition-colors duration-300">Được bác sĩ tư vấn, giải thích đầy đủ về tình trạng bệnh tật, hướng điều trị, khả năng thành công, phục hồi, hậu quả nếu không điều trị và những rủi ro có thể xảy ra.</p>
+          </div>
+        </li>
 
-  <!-- Item -->
-  <li class="flex gap-3">
-    <img src="./image/Group.svg" class="w-5 h-5 mt-1" alt="">
-    <div>
-      <p class="text-black font-medium">
-        Được bảo vệ an toàn
-      </p>
-      <p class="text-gray-500 text-sm mt-1">
-        Được cung cấp dịch vụ y tế đảm bảo về chất lượng dịch vụ và an toàn người bệnh. Được bảo vệ khỏi những rủi ro, được hỗ trợ bảo quản tài sản.
-      </p>
-    </div>
-  </li>
+        <li>
+          <p class="text-black font-medium">Quý khách vui lòng để lại số điện thoại, chúng tôi sẽ liên hệ lại ngay!</p>
+        </li>
 
-  <!-- Item -->
-  <li class="flex gap-3">
-    <img src="./image/Group.svg" class="w-5 h-5 mt-1" alt="">
-    <div>
-      <p class="text-black font-medium">
-        Được cung cấp thông tin
-      </p>
-      <p class="text-gray-500 text-sm mt-1">
-       Được bác sĩ tư vấn, giải thích đầy đủ về tình trạng bệnh tật, hướng điều trị, khả năng thành công, phục hồi, hậu quả nếu không điều trị và những rủi ro có thể xảy ra.
-      </p>
-    </div>
-  </li>
-<li class="flex gap-3">
-   
-    <div>
-      <p class="text-black font-medium">
-       Quý khách vui lòng để lại số điện thoại, chúng tôi sẽ liên hệ lại ngay!
-      </p>
-    
-    </div>
-  </li>
+      </ul>
 
       <!-- Form -->
       <div class="mt-6 flex">
-        <input 
-          type="text" 
-          placeholder="Nhập số điện thoại..." 
-          class="flex-1 px-4 py-3 rounded-l-full border outline-none"
+        <input
+          type="text"
+          placeholder="Nhập số điện thoại..."
+          class="flex-1 px-4 py-3 rounded-l-full border outline-none focus:border-orange-400 transition-colors duration-300"
         >
-        <button class="bg-orange-400 text-white px-6 rounded-r-full">
-          ✈ GỬI THÔNG TIN
+        <button class="bg-orange-500 hover:bg-orange-600 active:bg-orange-700 text-white text-[12px] px-8 py-3 rounded-r-full flex items-center gap-2 whitespace-nowrap transition-colors duration-300">
+          <img src="./image/máy bay.png" alt="" class="w-4 h-4 shrink-0"> GỬI THÔNG TIN
         </button>
       </div>
+
     </div>
-</ul>
- 
+    <!-- END LEFT -->
 
     <!-- RIGHT IMAGE -->
     <div>
@@ -543,78 +554,99 @@ Lưu giữ lịch sử tiêm online, nhắc lịch và thông báo cập nhật 
   </div>
 
 </section>
+<section>
+ <!-- Full viewport height hero image -->
+<div class="relative w-full h-screen min-h-[500px]">
+  <img
+    src="./image/blurred-abstract-background-interior-view-looking-out-toward-empty-office-lobby-entrance-doors-glass-curtain-wall-with-frame 1.jpg"
+    alt="Office lobby entrance with glass curtain wall"
+    class="absolute inset-0 w-full h-full object-cover object-center"
+  >
+</div>
+</section>
 <section class="max-w-7xl mx-auto py-16 px-6 text-center">
 
-  <!-- Title -->
   <h2 class="text-3xl font-bold text-gray-800">
     Đội ngũ bác sĩ giàu nhiệt huyết, tận tụy vì khách hàng
   </h2>
   <div class="w-20 h-1 bg-blue-500 mx-auto mt-3 mb-12 rounded"></div>
 
-  <!-- Cards -->
-  <div class="grid md:grid-cols-4 gap-6 items-center">
+  <div class="grid md:grid-cols-4 gap-6 items-start">
 
     <!-- CARD 1 -->
-    <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
-      <div class="bg-gray-200 h-64 flex items-end justify-center">
-        <img src="./image/image 823.png" class="h-60 object-contain">
+    <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
+      <div class="bg-gray-200 h-64 flex items-end justify-center overflow-hidden">
+        <img src="./image/image 823.png" class="h-60 object-contain transition-transform duration-300 group-hover:scale-110">
       </div>
       <div class="p-4">
         <h3 class="font-bold text-gray-800">NGUYỄN TRUNG CHÍNH</h3>
         <p class="text-green-600 text-sm">PGS.TS. Bác sĩ Ung bướu</p>
+        <div class="max-h-0 overflow-hidden group-hover:max-h-40 transition-all duration-500">
+          <p class="text-xs text-gray-600 leading-relaxed mt-3">
+            Chuyên gia ung bướu với nhiều năm kinh nghiệm điều trị và nghiên cứu, tận tâm đồng hành cùng bệnh nhân trong suốt quá trình điều trị.
+          </p>
+          <div class="text-yellow-400 text-sm mt-2">★★★★★</div>
+          <p class="text-xs text-gray-500">4.7/5 (32 bình chọn)</p>
+        </div>
       </div>
     </div>
 
-    <!-- CARD 2 (CENTER - ACTIVE) -->
-    <div class="bg-white rounded-2xl overflow-hidden shadow-xl scale-105 z-10">
-      <div class="bg-gray-200 h-64 flex items-end justify-center">
-        <img src="./image/image 823 (1).png" class="h-60 object-contain">
+    <!-- CARD 2 -->
+    <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
+      <div class="bg-gray-200 h-64 flex items-end justify-center overflow-hidden">
+        <img src="./image/image 823 (1).png" class="h-60 object-contain transition-transform duration-300 group-hover:scale-110">
       </div>
-
-      <div class="bg-gray-100 p-5">
+      <div class="p-4">
         <h3 class="font-bold text-gray-800">NGUYỄN HUY BẢO</h3>
-        <p class="text-green-600 text-sm mb-3">
-          TTND.TS.Bác sĩ CKII Sản phụ khoa
-        </p>
-
-        <p class="text-xs text-gray-600 leading-relaxed mb-3">
-          Với hơn 40 năm kinh nghiệm trong lĩnh vực Sản phụ khoa cùng nhiều nghiên cứu khoa học,
-          bác sĩ luôn tận tâm mang đến sự an tâm cho bệnh nhân.
-        </p>
-
-        <!-- Stars -->
-        <div class="text-yellow-400 text-sm mb-1">
-          ★★★★★
+        <p class="text-green-600 text-sm">TTND.TS.Bác sĩ CKII Sản phụ khoa</p>
+        <div class="max-h-0 overflow-hidden group-hover:max-h-40 transition-all duration-500">
+          <p class="text-xs text-gray-600 leading-relaxed mt-3">
+            Với hơn 40 năm kinh nghiệm trong lĩnh vực Sản phụ khoa cùng nhiều nghiên cứu khoa học, bác sĩ luôn tận tâm mang đến sự an tâm cho bệnh nhân.
+          </p>
+          <div class="text-yellow-400 text-sm mt-2">★★★★★</div>
+          <p class="text-xs text-gray-500">4.8/5 (38 bình chọn)</p>
         </div>
-        <p class="text-xs text-gray-500">4.8/5 (38 bình chọn)</p>
       </div>
     </div>
 
     <!-- CARD 3 -->
-    <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
-      <div class="bg-gray-200 h-64 flex items-end justify-center">
-        <img src="./image/image 823 (2).png" class="h-60 object-contain">
+    <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
+      <div class="bg-gray-200 h-64 flex items-end justify-center overflow-hidden">
+        <img src="./image/image 823 (2).png" class="h-60 object-contain transition-transform duration-300 group-hover:scale-110">
       </div>
       <div class="p-4">
         <h3 class="font-bold text-gray-800">TRẦN KINH TRANG</h3>
         <p class="text-green-600 text-sm">Bác sĩ CKII Nội khoa - Siêu âm tim</p>
+        <div class="max-h-0 overflow-hidden group-hover:max-h-40 transition-all duration-500">
+          <p class="text-xs text-gray-600 leading-relaxed mt-3">
+            Bác sĩ chuyên sâu Nội khoa và Siêu âm tim, có nhiều năm kinh nghiệm chẩn đoán và điều trị các bệnh lý tim mạch phức tạp.
+          </p>
+          <div class="text-yellow-400 text-sm mt-2">★★★★★</div>
+          <p class="text-xs text-gray-500">4.6/5 (27 bình chọn)</p>
+        </div>
       </div>
     </div>
 
     <!-- CARD 4 -->
-    <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
-      <div class="bg-gray-200 h-64 flex items-end justify-center">
-        <img src="./image/image 823 (3).png" class="h-60 object-contain">
+    <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300">
+      <div class="bg-gray-200 h-64 flex items-end justify-center overflow-hidden">
+        <img src="./image/image 823 (3).png" class="h-60 object-contain transition-transform duration-300 group-hover:scale-110">
       </div>
       <div class="p-4">
         <h3 class="font-bold text-gray-800">NGUYỄN THỊ KIM YẾN</h3>
         <p class="text-green-600 text-sm">ThS. Dược sĩ</p>
+        <div class="max-h-0 overflow-hidden group-hover:max-h-40 transition-all duration-500">
+          <p class="text-xs text-gray-600 leading-relaxed mt-3">
+            Thạc sĩ Dược sĩ với chuyên môn sâu về dược lý lâm sàng, tư vấn thuốc và hướng dẫn sử dụng thuốc an toàn cho bệnh nhân.
+          </p>
+          <div class="text-yellow-400 text-sm mt-2">★★★★★</div>
+          <p class="text-xs text-gray-500">4.7/5 (21 bình chọn)</p>
+        </div>
       </div>
     </div>
 
   </div>
 
-  <!-- Pagination dots -->
   <div class="flex justify-center items-center mt-8 space-x-2">
     <div class="w-6 h-1 bg-orange-500 rounded"></div>
     <div class="w-3 h-1 bg-gray-300 rounded"></div>
@@ -634,6 +666,7 @@ Lưu giữ lịch sử tiêm online, nhắc lịch và thông báo cập nhật 
   <div class="relative group mb-6">
     <div class="overflow-hidden rounded-3xl shadow-2xl border-4 border-white">
       <img 
+        id="mainImage"
         src="./image/Mask group.png" 
         alt="Customer getting vaccine" 
         class="w-full h-[500px] object-cover transition-transform duration-500 group-hover:scale-105"
@@ -641,51 +674,89 @@ Lưu giữ lịch sử tiêm online, nhắc lịch và thông báo cập nhật 
     </div>
   </div>
 
-<div class="flex items-center gap-4">
-  
-  <button class="w-10 h-10 flex items-center justify-center border-2 border-blue-400 rounded-full text-blue-500 hover:bg-blue-500 hover:text-white transition-all shrink-0 shadow-sm active:scale-95">
-    <span class="text-xl">←</span>
-  </button>
-
-  <div class="flex gap-3 overflow-x-auto no-scrollbar pb-2 scroll-smooth">
+  <div class="flex items-center gap-4">
     
-    <div class="min-w-[140px] h-24 overflow-hidden rounded-xl cursor-pointer border-2 border-transparent hover:border-blue-400 hover:scale-105 hover:shadow-lg transition-all duration-300">
-      <img src="./image/Rectangle 6566.jpg" class="w-full h-full object-cover">
+    <button id="prevBtn" class="w-10 h-10 flex items-center justify-center border-2 border-blue-400 rounded-full text-blue-500 hover:bg-blue-500 hover:text-white transition-all shrink-0 shadow-sm active:scale-95">
+      <span class="text-xl">←</span>
+    </button>
+
+    <div class="flex gap-3 overflow-x-auto pb-2 scroll-smooth" style="scrollbar-width:none">
+      
+      <div data-index="0" class="thumb min-w-[140px] h-24 overflow-hidden rounded-xl cursor-pointer border-2 border-blue-400 transition-all duration-300">
+        <img src="./image/Mask group.png" class="w-full h-full object-cover">
+      </div>
+
+      <div data-index="1" class="thumb min-w-[140px] h-24 overflow-hidden rounded-xl cursor-pointer border-2 border-transparent hover:border-blue-400 hover:scale-105 hover:shadow-lg transition-all duration-300">
+        <img src="./image/Rectangle 6566.jpg" class="w-full h-full object-cover">
+      </div>
+
+      <div data-index="2" class="thumb min-w-[140px] h-24 overflow-hidden rounded-xl cursor-pointer border-2 border-transparent hover:border-blue-400 hover:scale-105 hover:shadow-lg transition-all duration-300">
+        <img src="./image/1.png" class="w-full h-full object-cover">
+      </div>
+
+      <div data-index="3" class="thumb min-w-[140px] h-24 overflow-hidden rounded-xl cursor-pointer border-2 border-transparent hover:border-blue-400 hover:scale-105 hover:shadow-lg transition-all duration-300">
+        <img src="./image/2.png" class="w-full h-full object-cover">
+      </div>
+
+      <div data-index="4" class="thumb min-w-[140px] h-24 overflow-hidden rounded-xl cursor-pointer border-2 border-transparent hover:border-blue-400 hover:scale-105 hover:shadow-lg transition-all duration-300">
+        <img src="./image/3.png" class="w-full h-full object-cover">
+      </div>
+
+      <div data-index="5" class="thumb min-w-[140px] h-24 overflow-hidden rounded-xl cursor-pointer border-2 border-transparent hover:border-blue-400 hover:scale-105 hover:shadow-lg transition-all duration-300">
+        <img src="./image/Rectangle 6570.png" class="w-full h-full object-cover">
+      </div>
+      
+      <div data-index="6" class="thumb min-w-[140px] h-24 overflow-hidden rounded-xl cursor-pointer border-2 border-transparent hover:border-blue-400 hover:scale-105 hover:shadow-lg transition-all duration-300">
+        <img src="./image/4.png" class="w-full h-full object-cover">
+      </div>
+
+      <div data-index="7" class="thumb min-w-[140px] h-24 overflow-hidden rounded-xl cursor-pointer border-2 border-transparent hover:border-blue-400 hover:scale-105 hover:shadow-lg transition-all duration-300">
+        <img src="./image/Rectangle 6572.png" class="w-full h-full object-cover">
+      </div>
+
     </div>
 
-    <div class="min-w-[140px] h-24 overflow-hidden rounded-xl cursor-pointer border-2 border-blue-400 hover:scale-105 hover:shadow-lg transition-all duration-300">
-      <img src="./image/1.png" class="w-full h-full object-cover">
-    </div>
-
-    <div class="min-w-[140px] h-24 overflow-hidden rounded-xl cursor-pointer border-2 border-transparent hover:border-blue-400 hover:scale-105 hover:shadow-lg transition-all duration-300">
-      <img src="./image/2.png" class="w-full h-full object-cover">
-    </div>
-
-    <div class="min-w-[140px] h-24 overflow-hidden rounded-xl cursor-pointer border-2 border-transparent hover:border-blue-400 hover:scale-105 hover:shadow-lg transition-all duration-300">
-      <img src="./image/3.png" class="w-full h-full object-cover">
-    </div>
-
-    <div class="min-w-[140px] h-24 overflow-hidden rounded-xl cursor-pointer border-2 border-transparent hover:border-blue-400 hover:scale-105 hover:shadow-lg transition-all duration-300">
-      <img src="./image/Rectangle 6570.png" class="w-full h-full object-cover">
-    </div>
-    
-    <div class="min-w-[140px] h-24 overflow-hidden rounded-xl cursor-pointer border-2 border-transparent hover:border-blue-400 hover:scale-105 hover:shadow-lg transition-all duration-300">
-      <img src="./image/4.png" class="w-full h-full object-cover">
-    </div>
-
-    <div class="min-w-[140px] h-24 overflow-hidden rounded-xl cursor-pointer border-2 border-transparent hover:border-blue-400 hover:scale-105 hover:shadow-lg transition-all duration-300">
-      <img src="./image/Rectangle 6572.png" class="w-full h-full object-cover">
-    </div>
+    <button id="nextBtn" class="w-10 h-10 flex items-center justify-center bg-blue-500 rounded-full text-white hover:bg-blue-600 shadow-lg transition-all shrink-0 active:scale-95">
+      <span class="text-xl">→</span>
+    </button>
 
   </div>
 
-  <button class="w-10 h-10 flex items-center justify-center bg-blue-500 rounded-full text-white hover:bg-blue-600 shadow-lg transition-all shrink-0 active:scale-95">
-    <span class="text-xl">→</span>
-  </button>
-
-</div>
-
 </section>
+
+<script>
+  const images = [
+    './image/Mask group.png',
+    './image/Rectangle 6566.jpg',
+    './image/1.png',
+    './image/2.png',
+    './image/3.png',
+    './image/Rectangle 6570.png',
+    './image/4.png',
+    './image/Rectangle 6572.png',
+  ];
+
+  let current = 0;
+  const mainImage = document.getElementById('mainImage');
+  const thumbs = document.querySelectorAll('.thumb');
+
+  function setActive(index) {
+    current = (index + images.length) % images.length;
+    mainImage.src = images[current];
+    thumbs.forEach((t, i) => {
+      t.classList.toggle('border-blue-400', i === current);
+      t.classList.toggle('border-transparent', i !== current);
+      t.classList.toggle('scale-105', i === current);
+    });
+  }
+
+  thumbs.forEach(t => {
+    t.addEventListener('click', () => setActive(+t.dataset.index));
+  });
+
+  document.getElementById('prevBtn').addEventListener('click', () => setActive(current - 1));
+  document.getElementById('nextBtn').addEventListener('click', () => setActive(current + 1));
+</script>
 
 <style>
   .no-scrollbar::-webkit-scrollbar {
@@ -802,94 +873,327 @@ Lưu giữ lịch sử tiêm online, nhắc lịch và thông báo cập nhật 
   </div>
 </section>
 <section>
-  <div class="bg-white min-h-screen py-8 px-4 font-sans flex items-center justify-center">
-    <div class="max-w-5xl w-full">
+  <div class="bg-white min-h-screen py-12 px-4 font-sans flex items-center justify-center">
+    <div class="max-w-6xl w-full">
       
-      <div class="text-center mb-10">
+      <div class="text-center mb-16">
         <h2 class="text-2xl font-bold text-gray-800 px-4">
           Chương trình ưu đãi đặc biệt dành cho gói Tư vấn & Tiêm chủng Vắc-xin
         </h2>
         <div class="w-12 h-1 bg-blue-500 mx-auto mt-3 rounded-full"></div>
       </div>
 
-      <div class="relative flex items-center justify-center gap-2 group/container">
+      <div class="flex flex-wrap items-start justify-center gap-8">
         
-        <button class="absolute left-0 z-40 p-1.5 rounded-full border border-blue-300 text-blue-500 hover:bg-blue-50 transition-all hidden md:block">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-
-        <div class="flex items-center justify-center w-full overflow-visible py-10">
-          
-          <div class="hidden lg:block w-64 bg-slate-50 rounded-[2rem] shadow-sm border border-slate-100 overflow-hidden opacity-60 scale-90 translate-x-6 z-10 transition-all duration-500 
-                      hover:!scale-110 hover:!opacity-100 hover:z-30 hover:bg-blue-500 hover:text-white group">
-            <img src="./image/9.png" alt="Office" class="w-full h-32 object-cover grayscale-[20%] group-hover:grayscale-0 transition-all" />
-            <div class="p-5 text-center">
-              <h3 class="text-xs font-semibold text-blue-600 mb-2 group-hover:text-white">Gói Cơ quan</h3>
-              <p class="text-2xl font-bold text-blue-500 group-hover:text-white">999k</p>
-              <button class="mt-4 w-full py-2 bg-blue-400 text-white rounded-lg text-[10px] font-bold uppercase group-hover:bg-white group-hover:text-blue-600">Đăng ký ngay</button>
-            </div>
+        <div class="relative w-full max-w-[320px] min-h-[480px] bg-slate-50 rounded-[2.5rem] shadow-md border border-slate-100 overflow-hidden transition-all duration-500 z-10 
+                    hover:scale-110 hover:z-30 hover:bg-blue-600 hover:text-white group">
+          <div class="p-4">
+             <img src="./image/9.png" alt="Office" class="w-full h-48 object-cover rounded-[2rem] grayscale-[20%] group-hover:grayscale-0 transition-all duration-500" />
           </div>
+          <div class="p-6 text-center">
+            <h3 class="text-sm font-bold text-blue-600 mb-2 group-hover:text-white uppercase tracking-widest">Gói Cơ quan</h3>
+            <p class="text-4xl font-black text-blue-500 group-hover:text-white">999k</p>
+            
+            <ul class="mt-4 space-y-3 text-left transition-all duration-500 opacity-0 max-h-0 translate-y-4 overflow-hidden
+                       group-hover:opacity-100 group-hover:max-h-[200px] group-hover:translate-y-0">
+              <li class="flex items-start gap-2">
+                <span class="bg-blue-500 group-hover:bg-white group-hover:text-blue-600 text-white rounded-full w-4 h-4 flex items-center justify-center text-[10px] shrink-0 transition-colors">✓</span>
+                <span class="leading-tight text-[11px]">Ưu đãi cho đoàn từ 10 người trở lên</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="bg-blue-500 group-hover:bg-white group-hover:text-blue-600 text-white rounded-full w-4 h-4 flex items-center justify-center text-[10px] shrink-0 transition-colors">✓</span>
+                <span class="leading-tight text-[11px]">Hỗ trợ tiêm tận nơi cho doanh nghiệp</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="bg-blue-500 group-hover:bg-white group-hover:text-blue-600 text-white rounded-full w-4 h-4 flex items-center justify-center text-[10px] shrink-0 transition-colors">✓</span>
+                <span class="leading-tight text-[11px]">Xuất hóa đơn VAT đầy đủ</span>
+              </li>
+            </ul>
 
-          <div class="relative w-80 h-[550px] bg-blue-500 rounded-[2.5rem] shadow-xl border-2 border-blue-200 overflow-hidden z-20 transition-all duration-500
-                      scale-110
-                      group-hover/container:scale-90 group-hover/container:opacity-60 group-hover/container:z-10
-                      hover:!scale-110 hover:!opacity-100 hover:!z-30">
-            <div class="p-3 bg-white/10">
-                <img src="./image/10.png" alt="Family" class="w-full h-44 object-cover rounded-[1.8rem]" />
-            </div>
-            <div class="p-6 text-center text-white">
-              <h3 class="text-lg font-bold mb-1 leading-tight">Ưu đãi Tiêm chủng <br/> gói Gia Đình</h3>
-              <p class="text-5xl font-black my-2">999k</p>
-              <p class="text-xs opacity-70 mb-5">(Giá cũ: 1.999k)</p>
-              <ul class="space-y-3 text-xs text-left mb-6 px-2">
-  <li class="flex items-start gap-2">
-    <span class="bg-white text-blue-500 rounded-full w-4 h-4 flex items-center justify-center text-[10px] shrink-0">✓</span>
-    <span class="leading-tight text-[10px]">Chương trình ưu đãi dành cho Gia đình 4 người</span>
-  </li>
-  
-  <li class="flex items-start gap-2">
-    <span class="bg-white text-blue-500 rounded-full w-4 h-4 flex items-center justify-center text-[10px] shrink-0">✓</span>
-    <span class="leading-tight text-[10px]">Chương trình ưu đãi dành cho Gia đình 4 người</span>
-  </li>
-
-  <li class="flex items-start gap-2">
-    <span class="bg-white text-blue-500 rounded-full w-4 h-4 flex items-center justify-center text-[10px] shrink-0">✓</span>
-    <span class="leading-tight text-[10px]">Chương trình ưu đãi dành cho Gia đình 4 người</span>
-  </li>
-
-  <li class="flex items-start gap-2">
-    <span class="bg-white text-blue-500 rounded-full w-4 h-4 flex items-center justify-center text-[10px] shrink-0">✓</span>
-    <span class="leading-tight text-[10px]">Chương trình ưu đãi dành cho Gia đình 4 người</span>
-  </li>
-</ul>
-              <button class="w-full py-3 bg-white text-blue-600 rounded-2xl font-extrabold uppercase text-xs">Đăng ký ngay</button>
-            </div>
+            <button class="mt-6 w-full py-3 bg-blue-400 text-white rounded-2xl text-[11px] font-black uppercase transition-all group-hover:bg-white group-hover:text-blue-600 shadow-lg">
+              Đăng ký ngay
+            </button>
           </div>
-
-          <div class="hidden lg:block w-64 bg-slate-50 rounded-[2rem] shadow-sm border border-slate-100 overflow-hidden opacity-60 scale-90 -translate-x-6 z-10 transition-all duration-500 
-                      hover:!scale-110 hover:!opacity-100 hover:z-30 hover:bg-blue-500 hover:text-white group">
-            <img src="./image/8.jpg" alt="Vaccine" class="w-full h-32 object-cover grayscale-[20%] group-hover:grayscale-0 transition-all" />
-            <div class="p-5 text-center">
-              <h3 class="text-xs font-semibold text-blue-600 mb-2 group-hover:text-white">Gói Cơ quan</h3>
-              <p class="text-2xl font-bold text-blue-500 group-hover:text-white">999k</p>
-              <button class="mt-4 w-full py-2 bg-blue-400 text-white rounded-lg text-[10px] font-bold uppercase group-hover:bg-white group-hover:text-blue-600">Đăng ký ngay</button>
-            </div>
-          </div>
-
         </div>
 
-        <button class="absolute right-0 z-40 p-1.5 rounded-full bg-blue-500 text-white hover:bg-blue-600 shadow-md transition-all hidden md:block">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
+        <div class="relative w-full max-w-[320px] min-h-[480px] bg-slate-50 rounded-[2.5rem] shadow-md border border-slate-100 overflow-hidden transition-all duration-500 z-10 
+                    hover:scale-110 hover:z-30 hover:bg-blue-600 hover:text-white group">
+          <div class="p-4">
+             <img src="./image/10.png" alt="Family" class="w-full h-48 object-cover rounded-[2rem] grayscale-[20%] group-hover:grayscale-0 transition-all duration-500" />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-sm font-bold text-blue-600 mb-2 group-hover:text-white uppercase tracking-widest">Gói Gia Đình</h3>
+            <p class="text-4xl font-black text-blue-500 group-hover:text-white">999k</p>
+            
+            <ul class="mt-4 space-y-3 text-left transition-all duration-500 opacity-0 max-h-0 translate-y-4 overflow-hidden
+                       group-hover:opacity-100 group-hover:max-h-[200px] group-hover:translate-y-0">
+              <li class="flex items-start gap-2">
+                <span class="bg-blue-500 group-hover:bg-white group-hover:text-blue-600 text-white rounded-full w-4 h-4 flex items-center justify-center text-[10px] shrink-0 transition-colors">✓</span>
+                <span class="leading-tight text-[11px]">Áp dụng cho gia đình 4 thành viên</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="bg-blue-500 group-hover:bg-white group-hover:text-blue-600 text-white rounded-full w-4 h-4 flex items-center justify-center text-[10px] shrink-0 transition-colors">✓</span>
+                <span class="leading-tight text-[11px]">Miễn phí khám sàng lọc cho trẻ nhỏ</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="bg-blue-500 group-hover:bg-white group-hover:text-blue-600 text-white rounded-full w-4 h-4 flex items-center justify-center text-[10px] shrink-0 transition-colors">✓</span>
+                <span class="leading-tight text-[11px]">Tặng gói nhắc lịch tiêm chủng định kỳ</span>
+              </li>
+            </ul>
+
+            <button class="mt-6 w-full py-3 bg-blue-400 text-white rounded-2xl text-[11px] font-black uppercase transition-all group-hover:bg-white group-hover:text-blue-600 shadow-lg">
+              Đăng ký ngay
+            </button>
+          </div>
+        </div>
+
+        <div class="relative w-full max-w-[320px] min-h-[480px] bg-slate-50 rounded-[2.5rem] shadow-md border border-slate-100 overflow-hidden transition-all duration-500 z-10 
+                    hover:scale-110 hover:z-30 hover:bg-blue-600 hover:text-white group">
+          <div class="p-4">
+             <img src="./image/8.jpg" alt="Individual" class="w-full h-48 object-cover rounded-[2rem] grayscale-[20%] group-hover:grayscale-0 transition-all duration-500" />
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="text-sm font-bold text-blue-600 mb-2 group-hover:text-white uppercase tracking-widest">Gói Cá Nhân</h3>
+            <p class="text-4xl font-black text-blue-500 group-hover:text-white">999k</p>
+            
+            <ul class="mt-4 space-y-3 text-left transition-all duration-500 opacity-0 max-h-0 translate-y-4 overflow-hidden
+                       group-hover:opacity-100 group-hover:max-h-[200px] group-hover:translate-y-0">
+              <li class="flex items-start gap-2">
+                <span class="bg-blue-500 group-hover:bg-white group-hover:text-blue-600 text-white rounded-full w-4 h-4 flex items-center justify-center text-[10px] shrink-0 transition-colors">✓</span>
+                <span class="leading-tight text-[11px]">Tặng 01 mũi tiêm phòng cúm mùa</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="bg-blue-500 group-hover:bg-white group-hover:text-blue-600 text-white rounded-full w-4 h-4 flex items-center justify-center text-[10px] shrink-0 transition-colors">✓</span>
+                <span class="leading-tight text-[11px]">Tư vấn phác đồ tiêm chủng trọn đời</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="bg-blue-500 group-hover:bg-white group-hover:text-blue-600 text-white rounded-full w-4 h-4 flex items-center justify-center text-[10px] shrink-0 transition-colors">✓</span>
+                <span class="leading-tight text-[11px]">Giảm 10% cho các lần tiêm tiếp theo</span>
+              </li>
+            </ul>
+
+            <button class="mt-6 w-full py-3 bg-blue-400 text-white rounded-2xl text-[11px] font-black uppercase transition-all group-hover:bg-white group-hover:text-blue-600 shadow-lg">
+              Đăng ký ngay
+            </button>
+          </div>
+        </div>
 
       </div>
     </div>
   </div>
 </section>
+<section>
+<div class="relative w-full max-w-6xl mx-auto overflow-hidden shadow-2xl">
+  
+  <img 
+    src="./image/Group 9545.jpg" 
+    alt="Background" 
+    class="w-full h-[500px] block object-cover"
+  >
+
+  <div class="absolute bottom-0 left-0 w-full z-5 flex justify-center">
+    <img 
+      src="./image/Group 9268.png" 
+      alt="Content Image" 
+      class="w-full max-w-5/6 h-[700px] object-contain"
+    >
+  </div>
+
+  <div class="absolute bottom-0 left-0 w-full  z-5 flex justify-center  translate-y-1/4">
+  
+   <img 
+  src="./image/Rectangle 6574.png" 
+  alt="Content Image" 
+  class="w-5/6 h-[700px] object-contain"
+/>
+  
+</div>
+
+<div class="absolute bottom-0 left-0 w-full  z-10 translate-y-1/4">
+  <img 
+    src="./image/logo2.png" 
+    alt="Logo 2" 
+    class="w-full h-auto block object-cover"
+  >
+</div>
+
+ 
+
+</div>
+</section>
+
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Be Vietnam Pro', sans-serif; }
+  .font-script { font-family: 'Dancing Script', cursive; }
+  input, textarea {
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    transition: border-color 0.2s;
+  }
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #60a5fa;
+  }
+  input::placeholder, textarea::placeholder {
+    color: #bbb;
+    font-size: 14px;
+  }
+</style>
+
+
+<section class="relative w-full overflow-hidden" style="height: 420px;">
+
+  <!-- BACKGROUND: 2 ảnh trái / phải -->
+  <div class="absolute inset-0 flex">
+    <div class="w-1/2 h-full">
+      <img src="./image/2278 1.png" class="w-full h-full object-cover" alt="">
+    </div>
+    <div class="w-1/2 h-full">
+      <img src="./image/Rectangle 6614 (1).png" class="w-full h-full object-cover" alt="">
+    </div>
+  </div>
+
+  <!-- CONTENT overlay: absolute, full width -->
+  <div class="absolute inset-0 flex">
+
+    <!-- LEFT: chữ italic — canh top-left, padding từ trên ~40px, trái ~40px -->
+   <div class="w-1/2 flex items-start justify-start pt-10 pl-[100px]">
+  <p class="font-script text-[#444] leading-relaxed" style="font-size:22px;">
+    Thực hiện tiêm chủng Vắc-xin để bảo vệ bản thân <br>
+    và bảo vệ những người xung quanh !
+  </p>
+</div>
+
+    <!-- RIGHT: form — canh top, padding trên ~20px -->
+    <div class="w-1/2 flex justify-center pt-5 pr-[100px]">
+      <div class="w-full max-w-[420px]">
+
+        <!-- Header xanh -->
+        <div
+          class="text-white text-center py-4 px-4 rounded-xl mb-3"
+          style="background: linear-gradient(90deg, #4dbde8 0%, #3a96d8 100%);"
+        >
+          <h2 class="font-bold text-[15px] tracking-wide">ĐĂNG KÝ TƯ VẤN MIỄN PHÍ</h2>
+          <p class="text-[11px] mt-1 opacity-90 font-normal">Đặt hẹn ngay để nhận tư vấn và chúng tôi sẽ xếp lịch khám kịp thời!</p>
+        </div>
+
+        <!-- Fields -->
+        <div class="space-y-2 ">
+          <input type="text"  placeholder="Họ và tên (*)"      class="w-full px-4 py-[10px] rounded-lg text-sm text-gray-700">
+          <input type="tel"   placeholder="Số điện thoại (*)"  class="w-full px-4 py-[10px] rounded-lg text-sm text-gray-700">
+          <input type="email" placeholder="E-mail"             class="w-full px-4 py-[10px] rounded-lg text-sm text-gray-700">
+          <textarea placeholder="Nội dung..." rows="2" class="w-full px-4 py-[10px] rounded-lg text-sm text-gray-700 resize-none"></textarea>
+
+          <div class="pt-3 flex justify-center">
+            <button class="flex items-center justify-center gap-2 bg-orange-400 hover:bg-orange-500 hover:shadow-lg transition-all duration-300 text-white font-medium px-6 py-3 rounded-full shadow-md transform hover:-translate-y-1">
+    <img src="./image/note.png" alt="icon" class="w-5 h-5 object-contain">
+    <span>ĐĂNG KÝ TƯ VẤN</span>
+  </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<style>
+  body { font-family: 'Be Vietnam Pro', sans-serif; }
+</style>
+
+ 
+<footer class="relative w-full overflow-hidden">
+ 
+  <!-- BG image -->
+  <div class="absolute inset-0">
+    <img src="./image/Group 9546 (1).png" class="w-full h-full object-cover" alt="">
+  </div>
+ 
+  <!-- CONTENT -->
+  <div class="relative z-10 max-w-6xl mx-auto px-6 py-8">
+ 
+    <!-- Logo row -->
+    <div class="mb-5">
+      <img src="./image/Logo 3.png" alt="Phương Đông"
+        class="h-12"
+        onerror="this.outerHTML='<div class=\'flex items-center gap-2\'><div class=\'w-10 h-10 rounded-full border-2 border-white flex items-center justify-center\'><svg viewBox=\'0 0 24 24\' class=\'w-6 h-6 fill-white\'><path d=\'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z\'/></svg></div><div><p class=\'text-white font-bold text-lg leading-none tracking-wide\'>PHƯƠNG ĐÔNG</p><p class=\'text-white/80 text-[10px] tracking-widest\'>BỆNH VIỆN ĐA KHOA</p></div></div>'"
+      >
+    </div>
+ 
+    <!-- 4 columns -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+ 
+      <!-- Col 1: Thông tin bệnh viện -->
+<div>
+  <h5 class="text-white font-bold text-xs mb-3 uppercase">Bệnh viện Đa khoa Phương Đông</h5>
+  <div class="space-y-1 text-white/85 text-[11px] leading-relaxed">
+    <p><span class="font-semibold">Địa chỉ:</span> Số 9, Phố Viên, P. Cổ Nhuế 2, Q. Bắc Từ Liêm, HN</p>
+    <p class="flex gap-1">
+      <span class="font-semibold shrink-0">Email:</span>
+      <span>bvphuongdong@phuongdonghospital.vn</span>
+    </p>
+    <p><span class="font-semibold">Hotline:</span> 1900 1806</p>
+  </div>
+</div>
+    <!-- Col 2: Thời gian mở cửa -->
+<div>
+  <h3 class="text-white font-bold text-xs mb-3">Thời gian mở cửa</h3>
+  <div class="space-y-1 text-white/85 text-[11px] leading-relaxed">
+    <div class="flex gap-2">
+      <span class="whitespace-nowrap">Thứ 2 - Chủ nhật :</span>
+      <span class="font-semibold">07:30 -19:00</span>
+    </div>
+    <div class="flex gap-2">
+      <span class="whitespace-nowrap">Cấp cứu 24/7:</span>
+      <span class="font-semibold">0833 015 115</span>
+    </div>
+  </div>
+</div>
+
+<!-- Col 3: Liên hệ -->
+<div>
+  <h3 class="text-white font-bold text-xs mb-3">Liên hệ</h3>
+  <div class="space-y-1 text-white/85 text-[11px] leading-relaxed">
+    <p><span class="font-semibold">Hotline Tiêm chủng:</span>  0911 615 115</p>
+    <p><span class="font-semibold">Hotline Khoa sản :</span>  0911 615 115</p>
+  </div>
+</div>
+
+<!-- Col 4: Mạng xã hội -->
+<div>
+  <h3 class="text-white font-bold text-xs mb-3">Mạng xã hội</h3>
+  <div class="flex items-center gap-2">
+    <!-- Facebook -->
+    <a href="#" class="w-7 h-7 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition">
+      <svg class="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+    </a>
+    <!-- Twitter/X -->
+    <a href="#" class="w-7 h-7 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition">
+      <svg class="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+    </a>
+    <!-- YouTube -->
+    <a href="#" class="w-7 h-7 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition">
+      <svg class="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+    </a>
+    <!-- Instagram -->
+    <a href="#" class="w-7 h-7 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition">
+      <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="white"/></svg>
+    </a>
+  </div>
+</div>
+    </div>
+  </div>
+</footer>
+ 
+
+
+
 
 
 </body>
